@@ -1,199 +1,69 @@
-# questions.py - Expanded Advanced Database (20 Questions)
+# questions.py - Full 60 Question Bank for Advanced OHS Act 85 of 1993
 
 QUIZ_DATA = [
-    {
-        "question": "Under Section 37(2), an employer is liable for the conduct of a mandatary unless which condition is met?",
-        "options": [
-            "The employer provides all tools and equipment.",
-            "A written agreement is signed acknowledging the mandatary's duty to comply with the Act.",
-            "The mandatary has their own Letter of Good Standing.",
-            "The inspector grants a verbal exemption."
-        ],
-        "answer": "A written agreement is signed acknowledging the mandatary's duty to comply with the Act.",
-        "reference": "Section 37(2): Provisions regarding mandataries."
-    },
-    {
-        "question": "Which section of the OHS Act stipulates that the CEO is the person ultimately accountable for safety compliance?",
-        "options": ["Section 8", "Section 16(1)", "Section 17", "Section 38"],
-        "answer": "Section 16(1)",
-        "reference": "Section 16: Duty of chief executive officer."
-    },
-    {
-        "question": "What is the legal definition of 'Reasonably Practicable' in Section 1?",
-        "options": [
-            "Cost is never a factor in safety decisions.",
-            "Absolute safety must be guaranteed regardless of financial burden.",
-            "A balance between the severity of the hazard and the cost/utility of mitigation.",
-            "Compliance with international standards only."
-        ],
-        "answer": "A balance between the severity of the hazard and the cost/utility of mitigation.",
-        "reference": "Section 1: Definitions."
-    },
-    {
-        "question": "In terms of Section 17, at what employee count must an employer designate Health and Safety Representatives?",
-        "options": [
-            "Every workplace with 5+ employees.",
-            "Workplaces with more than 20 employees.",
-            "Only in high-risk factories.",
-            "Only if requested by a trade union."
-        ],
-        "answer": "Workplaces with more than 20 employees.",
-        "reference": "Section 17(1): Health and safety representatives."
-    },
-    {
-        "question": "How many days does an employer have to perform a formal investigation into a reportable incident under GAR 9?",
-        "options": ["24 hours", "7 days", "14 days", "30 days"],
-        "answer": "7 days",
-        "reference": "General Administrative Regulation 9(2)."
-    },
-    {
-        "question": "According to Section 24, which of the following must be reported to an inspector immediately?",
-        "options": [
-            "An employee slipping without injury.",
-            "A person becoming unconscious due to heat exhaustion.",
-            "A minor cut requiring a basic bandage.",
-            "Any employee taking a day of sick leave."
-        ],
-        "answer": "A person becoming unconscious due to heat exhaustion.",
-        "reference": "Section 24(1)(b): Reportable incidents."
-    },
-    {
-        "question": "Can a Section 16(2) appointee be held personally liable for a breach of the Act?",
-        "options": [
-            "No, only the CEO is liable.",
-            "Yes, if they failed to perform the duties assigned to them in their letter of appointment.",
-            "Only if they are the owner of the company.",
-            "No, the company pays all fines so individuals are never liable."
-        ],
-        "answer": "Yes, if they failed to perform the duties assigned to them in their letter of appointment.",
-        "reference": "Section 16(2) & Section 38: Offences and Penalties."
-    },
-    {
-        "question": "Under General Safety Regulation 2, who is responsible for providing and maintaining PPE at no cost to the employee?",
-        "options": ["The Employee", "The Trade Union", "The Employer", "The Department of Labour"],
-        "answer": "The Employer",
-        "reference": "General Safety Regulation 2(1)."
-    },
-    {
-        "question": "What power does an inspector have under Section 30 of the Act?",
-        "options": [
-            "The power to fire an employee.",
-            "The power to issue a prohibition notice to stop work immediately.",
-            "The power to increase the CEO's salary.",
-            "The power to change the company's registration name."
-        ],
-        "answer": "The power to issue a prohibition notice to stop work immediately.",
-        "reference": "Section 30: Special powers of inspectors."
-    },
-    {
-        "question": "When must a Health and Safety Committee meet at a minimum?",
-        "options": [
-            "Once a week.",
-            "At least once every three months.",
-            "Only after a serious accident.",
-            "Once a year."
-        ],
-        "answer": "At least once every three months.",
-        "reference": "Section 19(4): Health and safety committees."
-    },
-    {
-        "question": "Under Section 9, what is the employer's duty to persons other than their employees (e.g., the public or visitors)?",
-        "options": [
-            "No duty exists; visitors enter at their own risk.",
-            "To ensure they are not exposed to hazards to their health and safety.",
-            "To provide them with a full medical exam before entry.",
-            "Only to sign an indemnity form."
-        ],
-        "answer": "To ensure they are not exposed to hazards to their health and safety.",
-        "reference": "Section 9: General duties of employers to persons other than employees."
-    },
-    {
-        "question": "Which of the following must be included in an Annexure 1 incident record?",
-        "options": [
-            "The employee's home address.",
-            "A detailed description of the incident and the root cause.",
-            "The employee's political affiliation.",
-            "The company's profit margin for that month."
-        ],
-        "answer": "A detailed description of the incident and the root cause.",
-        "reference": "General Administrative Regulation 9(1)."
-    },
-    {
-        "question": "In a workplace with 100 employees, what is the minimum number of H&S Representatives required for a factory environment?",
-        "options": ["1", "2", "4", "10"],
-        "answer": "2",
-        "reference": "Section 17(2): 1 per 50 employees in shops/offices, 1 per 20 elsewhere (Standard interpreted)."
-    },
-    {
-        "question": "Can an employee refuse to use PPE provided by the employer?",
-        "options": [
-            "Yes, if they find it uncomfortable.",
-            "No, Section 14(c) requires employees to carry out any lawful order regarding health and safety.",
-            "Yes, if they buy their own.",
-            "Only if the H&S Representative agrees."
-        ],
-        "answer": "No, Section 14(c) requires employees to carry out any lawful order regarding health and safety.",
-        "reference": "Section 14: General duties of employees."
-    },
-    {
-        "question": "What is the maximum fine for a standard contravention of the Act (excluding Section 38 negligence)?",
-        "options": ["R5,000", "R50,000", "R100,000", "R1,000,000"],
-        "answer": "R50,000",
-        "reference": "Section 38: Offences, penalties and special orders."
-    },
-    {
-        "question": "Who must chair the Health and Safety Committee meeting?",
-        "options": [
-            "The CEO.",
-            "An Inspector.",
-            "The committee members elect a chairperson.",
-            "The most senior employee."
-        ],
-        "answer": "The committee members elect a chairperson.",
-        "reference": "Section 19(5): Health and safety committees."
-    },
-    {
-        "question": "Under Section 37(1), can an employer be held liable for an employee's mistake if they were acting outside their scope of authority?",
-        "options": [
-            "Never.",
-            "Yes, unless the employer proves they forbade the act and took reasonable steps to prevent it.",
-            "Always, without exception.",
-            "Only if the employee is a manager."
-        ],
-        "answer": "Yes, unless the employer proves they forbade the act and took reasonable steps to prevent it.",
-        "reference": "Section 37(1): Acts or omissions by employees."
-    },
-    {
-        "question": "Which regulation governs the safety of stacked materials in a warehouse?",
-        "options": [
-            "General Safety Regulation 8",
-            "Construction Regulation 10",
-            "General Administrative Regulation 4",
-            "Facilities Regulation 2"
-        ],
-        "answer": "General Safety Regulation 8",
-        "reference": "GSR 8: Stacking of articles."
-    },
-    {
-        "question": "What is the primary function of a Health and Safety Representative?",
-        "options": [
-            "To arrest employees who break rules.",
-            "To review the effectiveness of health and safety measures and perform inspections.",
-            "To do the cleaning in the workshop.",
-            "To manage the company's payroll."
-        ],
-        "answer": "To review the effectiveness of health and safety measures and perform inspections.",
-        "reference": "Section 18: Functions of health and safety representatives."
-    },
-    {
-        "question": "If an inspector issues a 'Correction Notice' under Section 30, can the employer appeal it?",
-        "options": [
-            "No, the inspector's word is final.",
-            "Yes, by appealing to the Chief Inspector within 60 days.",
-            "Yes, by appealing to the Chief Inspector within 30 days.",
-            "Only if they pay a fine first."
-        ],
-        "answer": "Yes, by appealing to the Chief Inspector within 60 days.",
-        "reference": "Section 35: Appeal against decision of inspector."
-    }
+    # --- FOUNDATIONS & DUTIES (1-15) ---
+    {"question": "What is the primary objective of the OHS Act 85 of 1993?", "options": ["Insurance for workers", "Health and safety of persons at work and machinery use", "Union regulation", "Wage standards"], "answer": "Health and safety of persons at work and machinery use", "explanation": "The Act focuses on prevention of injury and illness.", "reference": "Long Title"},
+    {"question": "Under Section 1, 'Reasonably Practicable' includes the assessment of:", "options": ["Cost alone", "Severity of hazard vs cost/effort of mitigation", "Competitor standards", "Employee preference"], "answer": "Severity of hazard vs cost/effort of mitigation", "explanation": "It requires a balance between risk and feasibility.", "reference": "Section 1"},
+    {"question": "Who is defined as a 'Mandatary'?", "options": ["Full-time employee", "Agent, contractor, or sub-contractor", "Government inspector", "The CEO"], "answer": "Agent, contractor, or sub-contractor", "explanation": "Mandataries are external parties performing work.", "reference": "Section 1"},
+    {"question": "Section 14(d) requires employees to report unsafe situations to:", "options": ["Family", "Police", "Employer or H&S representative", "Social media"], "answer": "Employer or H&S representative", "explanation": "Employees have a legal duty to report hazards immediately.", "reference": "Section 14(d)"},
+    {"question": "At what threshold must an employer designate H&S representatives?", "options": ["5+ employees", "20+ employees", "100+ employees", "Only in factories"], "answer": "20+ employees", "explanation": "Section 17(1) mandates reps for every 20+ employees.", "reference": "Section 17(1)"},
+    {"question": "Which incident must be reported under Section 24?", "options": ["Paper cut", "Unconsciousness at work", "Broken window", "Lost toolbox"], "answer": "Unconsciousness at work", "explanation": "Major incidents like unconsciousness are reportable.", "reference": "Section 24(1)"},
+    {"question": "How soon must a Section 24 incident be reported to the Provincial Director?", "options": ["24 hours", "Immediately (phone) and 7 days (written)", "Monthly", "14 days"], "answer": "Immediately (phone) and 7 days (written)", "explanation": "Fatalities and major incidents require immediate notification.", "reference": "GAR 8"},
+    {"question": "Section 8(1) requires the employer to provide a work environment that is:", "options": ["Profitable", "Safe and without risk to health", "Climate controlled", "Unionized"], "answer": "Safe and without risk to health", "explanation": "This is the core duty of the employer.", "reference": "Section 8(1)"},
+    {"question": "Who must be consulted when identifying hazards at work?", "options": ["The H&S Committee", "External auditors only", "The local police", "The Department of Transport"], "answer": "The H&S Committee", "explanation": "Committees must participate in safety decision making.", "reference": "Section 19"},
+    {"question": "What is the penalty for a standard contravention of the OHS Act?", "options": ["R500", "Up to R50,000 or 1 year prison", "R1,000,000", "Verbal warning"], "answer": "Up to R50,000 or 1 year prison", "explanation": "Section 38 defines the criminal penalties for non-compliance.", "reference": "Section 38"},
+    {"question": "Can an employee be charged for PPE provided by the employer?", "options": ["Yes, if they lose it", "No, it must be provided free of charge", "Yes, monthly deduction", "Only for high-end boots"], "answer": "No, it must be provided free of charge", "explanation": "The employer must provide PPE at no cost to the employee.", "reference": "Section 8(2)"},
+    {"question": "A Section 16(2) appointee's main role is to:", "options": ["Take over CEO liability", "Assist the CEO in OHS duties", "Run the HR department", "Manage the company's finances"], "answer": "Assist the CEO in OHS duties", "explanation": "They manage daily OHS tasks but accountability stays with the CEO.", "reference": "Section 16(2)"},
+    {"question": "Under Section 37(2), who is responsible for a contractor's safety if no agreement exists?", "options": ["The Contractor", "The Employer/User", "The Employee", "The Labour Union"], "answer": "The Employer/User", "explanation": "Without a 37.2 agreement, the user is liable for the contractor.", "reference": "Section 37"},
+    {"question": "How often must H&S Representatives perform inspections?", "options": ["Daily", "Once a year", "At intervals agreed upon with the employer", "Every 40 years"], "answer": "At intervals agreed upon with the employer", "explanation": "Inspection frequency is determined locally by the rep and management.", "reference": "Section 18"},
+    {"question": "What is the maximum term of office for an H&S Rep?", "options": ["1 year", "Indefinite", "As determined by the H&S Committee", "5 years"], "answer": "As determined by the H&S Committee", "explanation": "The Act allows the committee to set the term duration.", "reference": "Section 17"},
+
+    # --- LEGAL & ADMINISTRATIVE (16-30) ---
+    {"question": "Who chairs the H&S Committee meeting?", "options": ["The CEO", "The Safety Officer", "A person elected by the committee", "The oldest employee"], "answer": "A person elected by the committee", "explanation": "The committee is self-governing regarding its chairperson.", "reference": "Section 19"},
+    {"question": "A Prohibition Notice from an inspector means:", "options": ["Work must stop immediately", "The company is fined", "The CEO is arrested", "The workers get a holiday"], "answer": "Work must stop immediately", "explanation": "Inspectors use this to prevent immediate danger.", "reference": "Section 30"},
+    {"question": "When must an H&S Committee be established?", "options": ["With 2 or more H&S reps", "With 100+ employees", "In every factory", "Only after a death"], "answer": "With 2 or more H&S reps", "explanation": "If you have two or more reps, you must have a committee.", "reference": "Section 19"},
+    {"question": "What is 'Danger' as defined by the Act?", "options": ["Something that might hurt", "Anything which may cause injury or damage to health", "A loud noise", "An angry supervisor"], "answer": "Anything which may cause injury or damage to health", "explanation": "This is the broad legal definition of danger.", "reference": "Section 1"},
+    {"question": "What is the 'Annexure 1' document used for?", "options": ["Recording accidents/incidents", "Paying fines", "Contractor agreements", "Daily attendance"], "answer": "Recording accidents/incidents", "explanation": "GAR 9 requires recordable incidents be kept in this format.", "reference": "GAR 9"},
+    {"question": "How long must medical surveillance records be kept?", "options": ["3 years", "10 years", "40 years", "Indefinitely"], "answer": "40 years", "explanation": "Long-term health records must be kept for 40 years.", "reference": "HCS Regulations"},
+    {"question": "Section 13 requires the employer to inform employees of:", "options": ["Company profits", "Hazards and safety measures related to their work", "The CEO's home address", "Competitor prices"], "answer": "Hazards and safety measures related to their work", "explanation": "Informing employees is a mandatory duty of the employer.", "reference": "Section 13"},
+    {"question": "An Inspector may enter a workplace:", "options": ["Only with 24 hours notice", "At any reasonable time without previous notice", "Only if invited by the CEO", "Only if a crime was committed"], "answer": "At any reasonable time without previous notice", "explanation": "Inspectors have broad powers of entry for enforcement.", "reference": "Section 28"},
+    {"question": "Who pays for the H&S Rep's training?", "options": ["The Rep themselves", "The Union", "The Employer", "The Government"], "answer": "The Employer", "explanation": "Training for safety duties must be provided during work time at employer expense.", "reference": "Section 18"},
+    {"question": "What happens if an H&S Committee is deadlocked?", "options": ["The CEO decides", "They toss a coin", "The matter is referred to an inspector", "The union decides"], "answer": "The matter is referred to an inspector", "explanation": "Inspectors act as the final arbiter for committee disputes.", "reference": "Section 20"},
+    {"question": "A 'User' in the Act refers to the person who:", "options": ["Owns the machinery", "Operates the machinery", "Is in control of the machinery", "Fixes the machinery"], "answer": "Is in control of the machinery", "explanation": "Control is the legal standard for 'User' status.", "reference": "Section 1"},
+    {"question": "Under Section 35, an appeal against an inspector's decision goes to:", "options": ["The Police", "The Chief Inspector", "The High Court", "The CEO"], "answer": "The Chief Inspector", "explanation": "Appeals must be lodged with the Chief Inspector within 60 days.", "reference": "Section 35"},
+    {"question": "General Administrative Regulations (GAR) cover:", "options": ["Ladders", "Stacking", "Reporting of incidents and committee procedures", "Electrical safety"], "answer": "Reporting of incidents and committee procedures", "explanation": "GAR deals with the paperwork and formal processes of OHS.", "reference": "GAR"},
+    {"question": "Section 8(2)(d) requires the employer to:", "options": ["Provide coffee", "Establish hazards and the risk associated with them", "Hire more staff", "Buy new trucks"], "answer": "Establish hazards and the risk associated with them", "explanation": "This refers to the duty to conduct risk assessments.", "reference": "Section 8"},
+    {"question": "If an inspector seizes an item, they must:", "options": ["Pay for it", "Issue a receipt to the employer", "Give it to the union", "Throw it away"], "answer": "Issue a receipt to the employer", "explanation": "Legal due process requires a receipt for seized evidence.", "reference": "Section 28"},
+
+    # --- TECHNICAL & SAFETY REGULATIONS (31-60) ---
+    {"question": "General Safety Regulation 3: Who may administer First Aid?", "options": ["Anyone", "A person with a valid first aid certificate", "The Manager", "The HR Clerk"], "answer": "A person with a valid first aid certificate", "explanation": "First aiders must be competent and certified.", "reference": "GSR 3"},
+    {"question": "What is the required ratio of First Aiders in a shop or office?", "options": ["1 per 10 employees", "1 per 50 employees", "1 per 100 employees", "1 per company"], "answer": "1 per 100 employees", "explanation": "Offices have a lower requirement than factories.", "reference": "GSR 3"},
+    {"question": "What is the required ratio of First Aiders in a factory or workshop?", "options": ["1 per 5 employees", "1 per 50 employees", "1 per 20 employees", "1 per shift"], "answer": "1 per 50 employees", "explanation": "Higher risk environments require more first aiders.", "reference": "GSR 3"},
+    {"question": "GSR 2: When must PPE be used?", "options": ["Always", "Only when an inspector is present", "When hazards cannot be mitigated by other means", "When it looks professional"], "answer": "When hazards cannot be mitigated by other means", "explanation": "PPE is the last line of defense in the hierarchy of controls.", "reference": "GSR 2"},
+    {"question": "Under GSR 8, stacking must be done so that:", "options": ["It touches the ceiling", "It is stable and safe", "It is hidden from view", "It is done by hand only"], "answer": "It is stable and safe", "explanation": "Stability is the key safety requirement for stacking.", "reference": "GSR 8"},
+    {"question": "Which regulation covers the safety of ladders?", "options": ["GSR 13A", "GAR 5", "Section 16", "Driven Machinery Regulations"], "answer": "GSR 13A", "explanation": "GSR 13A specifically regulates the use and maintenance of ladders.", "reference": "GSR 13A"},
+    {"question": "What is 'Intoxication' as per GSR 10?", "options": ["Only being drunk on alcohol", "Under the influence of any substance that inhibits safe work", "Being very tired", "Being angry"], "answer": "Under the influence of any substance that inhibits safe work", "explanation": "This includes drugs, medication, and alcohol.", "reference": "GSR 10"},
+    {"question": "Can an intoxicated person enter a workplace?", "options": ["Yes, if they are quiet", "No, the employer must permit no person under the influence to remain", "Only if they are a visitor", "Yes, in the lunchroom"], "answer": "No, the employer must permit no person under the influence to remain", "explanation": "The employer has a strict duty to exclude intoxicated persons.", "reference": "GSR 10"},
+    {"question": "Environmental Regulations: What must be provided for workers in high heat?", "options": ["Ice cream", "Cold water and shaded rest areas", "Extra pay", "Short sleeves"], "answer": "Cold water and shaded rest areas", "explanation": "The employer must mitigate heat stress.", "reference": "ERW"},
+    {"question": "Facilities Regulations: What is the minimum number of toilets for 100 males?", "options": ["1", "3", "5", "10"], "answer": "5", "explanation": "Facilities regulations set specific ratios for sanitation.", "reference": "FR 2"},
+    {"question": "Driven Machinery Regulations: Who may operate a forklift?", "options": ["Any driver", "Only a person with a valid operator's certificate", "The Warehouse Manager", "Contractors only"], "answer": "Only a person with a valid operator's certificate", "explanation": "Lifting machinery requires specific training and certification.", "reference": "DMR 18"},
+    {"question": "DMR 18: How often must a lifting machine be load tested?", "options": ["Every month", "Every 6 months", "Every 12 months", "Once in its lifetime"], "answer": "Every 12 months", "explanation": "Annual load testing is a mandatory safety requirement.", "reference": "DMR 18"},
+    {"question": "Who is responsible for the safety of a pressure vessel (e.g. air compressor)?", "options": ["The manufacturer", "The User", "The Inspector", "The Driver"], "answer": "The User", "explanation": "The person in control (the user) is responsible for maintenance.", "reference": "PER"},
+    {"question": "Noise Induced Hearing Loss (NIHL) Regulations: At what level must hearing protection be worn?", "options": ["70 dB", "85 dB", "100 dB", "Only if it is loud"], "answer": "85 dB", "explanation": "85 decibels is the legal noise rating limit.", "reference": "NIHL Regs"},
+    {"question": "A 'competent person' is someone with the necessary:", "options": ["Tools", "Knowledge, training, and experience", "Money", "Time"], "answer": "Knowledge, training, and experience", "explanation": "Competency is a combination of these three factors.", "reference": "Section 1"},
+    {"question": "The Construction Regulations apply to:", "options": ["Only big buildings", "Any work involving building, alterations, or demolition", "Only road works", "DIY at home"], "answer": "Any work involving building, alterations, or demolition", "explanation": "The scope of CR is very broad in the built environment.", "reference": "CR 1"},
+    {"question": "Under Construction Regulations, a Fall Protection Plan is required for:", "options": ["Work above 2 meters", "Any work where there is a risk of falling", "Only skyscraper work", "Roof work only"], "answer": "Any work where there is a risk of falling", "explanation": "If a fall risk exists, a plan is mandatory.", "reference": "CR 10"},
+    {"question": "Hazardous Biological Agents (HBA) include:", "options": ["Rust", "Viruses, bacteria, and fungi", "Electricity", "Falling rocks"], "answer": "Viruses, bacteria, and fungi", "explanation": "HBA refers to living organisms that cause harm.", "reference": "HBA Regs"},
+    {"question": "Asbestos Regulations: Can you dispose of asbestos in a normal bin?", "options": ["Yes, if wrapped", "No, it must be disposed of at a registered hazardous waste site", "Only if it is broken", "Yes, at night"], "answer": "No, it must be disposed of at a registered hazardous waste site", "explanation": "Asbestos is highly regulated due to its carcinogenic nature.", "reference": "Asbestos Regs"},
+    {"question": "General Safety Regulation 5: Dangerous work in confined spaces requires:", "options": ["A torch", "A permit-to-work and specialized training/PPE", "Two people", "Speed"], "answer": "A permit-to-work and specialized training/PPE", "explanation": "Confined spaces are high-risk and require strict controls.", "reference": "GSR 5"},
+    {"question": "What is the main duty of a Section 16.2 appointee in a transport depot?", "options": ["To drive trucks", "To ensure the workshop and depot comply with safety laws", "To manage the payroll", "To fix the engines"], "answer": "To ensure the workshop and depot comply with safety laws", "explanation": "16.2s are the daily 'eyes and ears' for safety compliance.", "reference": "Section 16"},
+    {"question": "If a driver has a fatigue-related accident, is it a Section 24 reportable incident?", "options": ["No, it's just a crash", "Yes, if it resulted in a reportable injury or hospitalization", "Only if the truck is damaged", "Only if the police arrive"], "answer": "Yes, if it resulted in a reportable injury or hospitalization", "explanation": "The outcome of the incident (injury) determines the reporting duty.", "reference": "Section 24"},
+    {"question": "Which regulation requires a safety sign for 'Eye Protection Required'?", "options": ["GSR 3", "GSR 2", "Safety Signs Act", "Section 8"], "answer": "GSR 2", "explanation": "GSR 2 mandates symbols and signs for PPE requirements.", "reference": "GSR 2"},
+    {"question": "How often must a First Aid box be inspected?", "options": ["Every year", "At regular intervals to ensure it is fully stocked", "Never", "Only after use"], "answer": "At regular intervals to ensure it is fully stocked", "explanation": "Regular checks ensure readiness for emergencies.", "reference": "GSR 3"},
+    {"question": "Can an employer fine an employee for not wearing a hard hat?", "options": ["Yes, it's a legal fine", "No, but they can take disciplinary action", "Only if the union allows", "Yes, R100 per day"], "answer": "No, but they can take disciplinary action", "explanation": "OHS fines are issued by courts, not employers (disciplinary action is the route).", "reference": "Section 38"},
+    {"question": "A 'Safety File' is legally required under which regulations for contractors?", "options": ["GAR", "Construction Regulations", "Section 16", "Transport Act"], "answer": "Construction Regulations", "explanation": "CR 7 requires a health and safety file for every project.", "reference": "CR 7"},
+    {"question": "What must be done before a new machine is used for the first time?", "options": ["Paint it", "Perform a risk assessment and ensure operators are trained", "Take a photo", "Call the CEO"], "answer": "Perform a risk assessment and ensure operators are trained", "explanation": "Section 8 requires hazards to be established before work begins.", "reference": "Section 8"},
+    {"question": "Who must be informed if a worker develops an 'Occupational Disease'?", "options": ["The family only", "The Provincial Director (Inspectorate)", "The local doctor only", "The Newspaper"], "answer": "The Provincial Director (Inspectorate)", "explanation": "Occupational diseases are reportable under Section 25.", "reference": "Section 25"},
+    {"question": "Which of these is a legal appointment under OHS Act?", "options": ["Office Manager", "16.2 Assistant", "Payroll Clerk", "Mechanic"], "answer": "16.2 Assistant", "explanation": "A 16.2 is a formal legal appointment recognized by the Act.", "reference": "Section 16"},
+    {"question": "The ultimate goal of an OHS Audit is to:", "options": ["Catch people doing things wrong", "Identify gaps in compliance and improve safety systems", "Lower the salary of the safety officer", "Close the company"], "answer": "Identify gaps in compliance and improve safety systems", "explanation": "Audits are for continuous improvement and legal verification.", "reference": "Advanced Management"}
 ]
